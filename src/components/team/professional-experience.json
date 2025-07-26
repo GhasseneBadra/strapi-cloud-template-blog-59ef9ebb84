@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_team_professional_experiences",
+  "info": {
+    "displayName": "Professional Experience",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "experience": {
+      "type": "string"
+    },
+    "personalExperience": {
+      "type": "string"
+    },
+    "education": {
+      "type": "json"
+    },
+    "certification": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

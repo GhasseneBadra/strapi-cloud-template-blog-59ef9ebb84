@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_team_skill_achievements",
+  "info": {
+    "displayName": "Skill achievements",
+    "icon": "lightbulb"
+  },
+  "options": {},
+  "attributes": {
+    "skill": {
+      "type": "json"
+    },
+    "achievements": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

@@ -62,6 +62,58 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface TeamContactInfo extends Struct.ComponentSchema {
+  collectionName: 'components_team_contact_infos';
+  info: {
+    displayName: 'Contact Info';
+    icon: 'manyToMany';
+  };
+  attributes: {
+    address: Schema.Attribute.Blocks;
+    email: Schema.Attribute.Email;
+    phone: Schema.Attribute.String;
+  };
+}
+
+export interface TeamProfessionalExperience extends Struct.ComponentSchema {
+  collectionName: 'components_team_professional_experiences';
+  info: {
+    displayName: 'Professional Experience';
+    icon: 'briefcase';
+  };
+  attributes: {
+    certification: Schema.Attribute.JSON;
+    education: Schema.Attribute.JSON;
+    experience: Schema.Attribute.String;
+    personalExperience: Schema.Attribute.String;
+  };
+}
+
+export interface TeamSkillAchievements extends Struct.ComponentSchema {
+  collectionName: 'components_team_skill_achievements';
+  info: {
+    displayName: 'Skill achievements';
+    icon: 'lightbulb';
+  };
+  attributes: {
+    achievements: Schema.Attribute.JSON;
+    skill: Schema.Attribute.JSON;
+  };
+}
+
+export interface TeamSocialMedia extends Struct.ComponentSchema {
+  collectionName: 'components_team_social_medias';
+  info: {
+    displayName: 'Social Media';
+    icon: 'cursor';
+  };
+  attributes: {
+    facebook: Schema.Attribute.String;
+    instagram: Schema.Attribute.String;
+    twitter: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -70,6 +122,10 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'team.contact-info': TeamContactInfo;
+      'team.professional-experience': TeamProfessionalExperience;
+      'team.skill-achievements': TeamSkillAchievements;
+      'team.social-media': TeamSocialMedia;
     }
   }
 }
