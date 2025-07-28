@@ -85,7 +85,7 @@ export interface TeamProfessionalExperience extends Struct.ComponentSchema {
     certification: Schema.Attribute.JSON;
     education: Schema.Attribute.JSON;
     experience: Schema.Attribute.String;
-    personalExperience: Schema.Attribute.String;
+    personalExperience: Schema.Attribute.Text;
   };
 }
 

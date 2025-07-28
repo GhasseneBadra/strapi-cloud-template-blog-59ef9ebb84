@@ -10,7 +10,7 @@
       "type": "string"
     },
     "personalExperience": {
-      "type": "string"
+      "type": "text"
     },
     "education": {
       "type": "json"
