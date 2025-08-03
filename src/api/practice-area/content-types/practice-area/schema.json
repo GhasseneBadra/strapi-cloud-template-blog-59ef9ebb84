@@ -109,7 +109,7 @@
         }
       },
       "component": "shared.seo",
-      "repeatable": true,
+      "repeatable": false,
       "required": true
     }
   }

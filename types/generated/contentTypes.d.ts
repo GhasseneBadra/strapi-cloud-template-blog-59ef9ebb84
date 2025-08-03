@@ -874,7 +874,7 @@ export interface ApiPracticeAreaPracticeArea
           localized: true;
         };
       }>;
-    seo: Schema.Attribute.Component<'shared.seo', true> &
+    seo: Schema.Attribute.Component<'shared.seo', false> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
