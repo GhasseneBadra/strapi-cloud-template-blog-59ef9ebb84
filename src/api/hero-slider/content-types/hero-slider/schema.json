@@ -77,24 +77,6 @@
         }
       },
       "default": true
-    },
-    "buttonText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "maxLength": 50
-    },
-    "buttonLink": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "maxLength": 255
     }
   }
 }
