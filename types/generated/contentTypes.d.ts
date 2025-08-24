@@ -1067,6 +1067,13 @@ export interface ApiPublicationPublication extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    type: Schema.Attribute.Enumeration<['publication', 'law_and_regulation']> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.DefaultTo<'publication'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

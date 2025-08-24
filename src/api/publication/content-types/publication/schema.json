@@ -71,6 +71,19 @@
       "relation": "oneToMany",
       "target": "api::practice-area.practice-area",
       "mappedBy": "publications"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "publication",
+        "law_and_regulation"
+      ],
+      "default": "publication",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
