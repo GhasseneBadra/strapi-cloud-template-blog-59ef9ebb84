@@ -125,9 +125,9 @@
     },
     "publications": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::publication.publication",
-      "inversedBy": "category"
+      "mappedBy": "category"
     }
   }
 }

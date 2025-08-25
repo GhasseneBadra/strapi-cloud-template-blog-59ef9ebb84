@@ -68,9 +68,9 @@
     },
     "category": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::practice-area.practice-area",
-      "mappedBy": "publications"
+      "inversedBy": "publications"
     },
     "type": {
       "type": "enumeration",
